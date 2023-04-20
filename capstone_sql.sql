@@ -1,0 +1,8 @@
+SELECT *
+FROM torn_1950_1999;
+
+SELECT *
+FROM torn_2000_2010;
+
+SELECT *
+FROM torn_2011_2021;
