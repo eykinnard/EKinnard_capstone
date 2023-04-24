@@ -1,0 +1,2568 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='all_1950_2021' inline='true' name='federated.1xntole0vo8upm141vdfi0mdwfcp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_1950_2021' name='textscan.0liwhq70j5ff2k16lkomd16hb431'>
+            <connection class='textscan' directory='C:/Users/eykin/Desktop/NSS/Capstone/data' filename='all_1950_2021.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0liwhq70j5ff2k16lkomd16hb431' name='all_1950_2021.csv' table='[all_1950_2021#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='tornado_number' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='integer' name='month' ordinal='3' />
+            <column datatype='integer' name='day' ordinal='4' />
+            <column datatype='date' name='date' ordinal='5' />
+            <column datatype='datetime' name='time' ordinal='6' />
+            <column datatype='integer' name='time_zone' ordinal='7' />
+            <column datatype='string' name='state' ordinal='8' />
+            <column datatype='integer' name='state_fips' ordinal='9' />
+            <column datatype='integer' name='state_number' ordinal='10' />
+            <column datatype='integer' name='ef_scale' ordinal='11' />
+            <column datatype='integer' name='injuries' ordinal='12' />
+            <column datatype='integer' name='fatalities' ordinal='13' />
+            <column datatype='real' name='loss' ordinal='14' />
+            <column datatype='real' name='crop_loss' ordinal='15' />
+            <column datatype='real' name='start_lat' ordinal='16' />
+            <column datatype='real' name='start_lon' ordinal='17' />
+            <column datatype='real' name='end_lat' ordinal='18' />
+            <column datatype='real' name='end_lon' ordinal='19' />
+            <column datatype='real' name='length_miles' ordinal='20' />
+            <column datatype='real' name='width' ordinal='21' />
+            <column datatype='integer' name='num_states_affected' ordinal='22' />
+            <column datatype='integer' name='state_num' ordinal='23' />
+            <column datatype='integer' name='tornado_segment' ordinal='24' />
+            <column datatype='integer' name='f1' ordinal='25' />
+            <column datatype='integer' name='f2' ordinal='26' />
+            <column datatype='integer' name='f3' ordinal='27' />
+            <column datatype='integer' name='f4' ordinal='28' />
+            <column datatype='integer' name='est_fscale' ordinal='29' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0liwhq70j5ff2k16lkomd16hb431' name='all_1950_2021.csv' table='[all_1950_2021#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='tornado_number' ordinal='1' />
+              <column datatype='integer' name='year' ordinal='2' />
+              <column datatype='integer' name='month' ordinal='3' />
+              <column datatype='integer' name='day' ordinal='4' />
+              <column datatype='date' name='date' ordinal='5' />
+              <column datatype='datetime' name='time' ordinal='6' />
+              <column datatype='integer' name='time_zone' ordinal='7' />
+              <column datatype='string' name='state' ordinal='8' />
+              <column datatype='integer' name='state_fips' ordinal='9' />
+              <column datatype='integer' name='state_number' ordinal='10' />
+              <column datatype='integer' name='ef_scale' ordinal='11' />
+              <column datatype='integer' name='injuries' ordinal='12' />
+              <column datatype='integer' name='fatalities' ordinal='13' />
+              <column datatype='real' name='loss' ordinal='14' />
+              <column datatype='real' name='crop_loss' ordinal='15' />
+              <column datatype='real' name='start_lat' ordinal='16' />
+              <column datatype='real' name='start_lon' ordinal='17' />
+              <column datatype='real' name='end_lat' ordinal='18' />
+              <column datatype='real' name='end_lon' ordinal='19' />
+              <column datatype='real' name='length_miles' ordinal='20' />
+              <column datatype='real' name='width' ordinal='21' />
+              <column datatype='integer' name='num_states_affected' ordinal='22' />
+              <column datatype='integer' name='state_num' ordinal='23' />
+              <column datatype='integer' name='tornado_segment' ordinal='24' />
+              <column datatype='integer' name='f1' ordinal='25' />
+              <column datatype='integer' name='f2' ordinal='26' />
+              <column datatype='integer' name='f3' ordinal='27' />
+              <column datatype='integer' name='f4' ordinal='28' />
+              <column datatype='integer' name='est_fscale' ordinal='29' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0liwhq70j5ff2k16lkomd16hb431' name='dixie_1950_2021.csv' table='[dixie_1950_2021#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='tornado_number' ordinal='1' />
+              <column datatype='integer' name='year' ordinal='2' />
+              <column datatype='integer' name='month' ordinal='3' />
+              <column datatype='integer' name='day' ordinal='4' />
+              <column datatype='date' name='date' ordinal='5' />
+              <column datatype='datetime' name='time' ordinal='6' />
+              <column datatype='integer' name='time_zone' ordinal='7' />
+              <column datatype='string' name='state' ordinal='8' />
+              <column datatype='integer' name='state_fips' ordinal='9' />
+              <column datatype='integer' name='state_number' ordinal='10' />
+              <column datatype='integer' name='ef_scale' ordinal='11' />
+              <column datatype='integer' name='injuries' ordinal='12' />
+              <column datatype='integer' name='fatalities' ordinal='13' />
+              <column datatype='real' name='loss' ordinal='14' />
+              <column datatype='real' name='crop_loss' ordinal='15' />
+              <column datatype='real' name='start_lat' ordinal='16' />
+              <column datatype='real' name='start_lon' ordinal='17' />
+              <column datatype='real' name='end_lat' ordinal='18' />
+              <column datatype='real' name='end_lon' ordinal='19' />
+              <column datatype='real' name='length_miles' ordinal='20' />
+              <column datatype='real' name='width' ordinal='21' />
+              <column datatype='integer' name='num_states_affected' ordinal='22' />
+              <column datatype='integer' name='state_num' ordinal='23' />
+              <column datatype='integer' name='tornado_segment' ordinal='24' />
+              <column datatype='integer' name='f1' ordinal='25' />
+              <column datatype='integer' name='f2' ordinal='26' />
+              <column datatype='integer' name='f3' ordinal='27' />
+              <column datatype='integer' name='f4' ordinal='28' />
+              <column datatype='integer' name='est_fscale' ordinal='29' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0liwhq70j5ff2k16lkomd16hb431' name='torn_1950_2021.csv' table='[torn_1950_2021#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='tornado_number' ordinal='1' />
+              <column datatype='integer' name='year' ordinal='2' />
+              <column datatype='integer' name='month' ordinal='3' />
+              <column datatype='integer' name='day' ordinal='4' />
+              <column datatype='date' name='date' ordinal='5' />
+              <column datatype='datetime' name='time' ordinal='6' />
+              <column datatype='integer' name='time_zone' ordinal='7' />
+              <column datatype='string' name='state' ordinal='8' />
+              <column datatype='integer' name='state_fips' ordinal='9' />
+              <column datatype='integer' name='state_number' ordinal='10' />
+              <column datatype='integer' name='ef_scale' ordinal='11' />
+              <column datatype='integer' name='injuries' ordinal='12' />
+              <column datatype='integer' name='fatalities' ordinal='13' />
+              <column datatype='real' name='loss' ordinal='14' />
+              <column datatype='real' name='crop_loss' ordinal='15' />
+              <column datatype='real' name='start_lat' ordinal='16' />
+              <column datatype='real' name='start_lon' ordinal='17' />
+              <column datatype='real' name='end_lat' ordinal='18' />
+              <column datatype='real' name='end_lon' ordinal='19' />
+              <column datatype='real' name='length_miles' ordinal='20' />
+              <column datatype='real' name='width' ordinal='21' />
+              <column datatype='integer' name='num_states_affected' ordinal='22' />
+              <column datatype='integer' name='state_num' ordinal='23' />
+              <column datatype='integer' name='tornado_segment' ordinal='24' />
+              <column datatype='integer' name='f1' ordinal='25' />
+              <column datatype='integer' name='f2' ordinal='26' />
+              <column datatype='integer' name='f3' ordinal='27' />
+              <column datatype='integer' name='f4' ordinal='28' />
+              <column datatype='integer' name='est_fscale' ordinal='29' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[F1]' />
+          <map key='[F1 (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[F1]' />
+          <map key='[F1]' value='[all_1950_2021.csv].[F1]' />
+          <map key='[crop_loss (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[crop_loss]' />
+          <map key='[crop_loss (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[crop_loss]' />
+          <map key='[crop_loss]' value='[all_1950_2021.csv].[crop_loss]' />
+          <map key='[date (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[date]' />
+          <map key='[date (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[date]' />
+          <map key='[date]' value='[all_1950_2021.csv].[date]' />
+          <map key='[day (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[day]' />
+          <map key='[day (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[day]' />
+          <map key='[day]' value='[all_1950_2021.csv].[day]' />
+          <map key='[ef_scale (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[ef_scale]' />
+          <map key='[ef_scale (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[ef_scale]' />
+          <map key='[ef_scale]' value='[all_1950_2021.csv].[ef_scale]' />
+          <map key='[end_lat (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[end_lat]' />
+          <map key='[end_lat (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[end_lat]' />
+          <map key='[end_lat]' value='[all_1950_2021.csv].[end_lat]' />
+          <map key='[end_lon (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[end_lon]' />
+          <map key='[end_lon (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[end_lon]' />
+          <map key='[end_lon]' value='[all_1950_2021.csv].[end_lon]' />
+          <map key='[est_fscale (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[est_fscale]' />
+          <map key='[est_fscale (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[est_fscale]' />
+          <map key='[est_fscale]' value='[all_1950_2021.csv].[est_fscale]' />
+          <map key='[f1 (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[f1]' />
+          <map key='[f1 (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[f1]' />
+          <map key='[f1]' value='[all_1950_2021.csv].[f1]' />
+          <map key='[f2 (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[f2]' />
+          <map key='[f2 (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[f2]' />
+          <map key='[f2]' value='[all_1950_2021.csv].[f2]' />
+          <map key='[f3 (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[f3]' />
+          <map key='[f3 (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[f3]' />
+          <map key='[f3]' value='[all_1950_2021.csv].[f3]' />
+          <map key='[f4 (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[f4]' />
+          <map key='[f4 (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[f4]' />
+          <map key='[f4]' value='[all_1950_2021.csv].[f4]' />
+          <map key='[fatalities (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[fatalities]' />
+          <map key='[fatalities (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[fatalities]' />
+          <map key='[fatalities]' value='[all_1950_2021.csv].[fatalities]' />
+          <map key='[injuries (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[injuries]' />
+          <map key='[injuries (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[injuries]' />
+          <map key='[injuries]' value='[all_1950_2021.csv].[injuries]' />
+          <map key='[length_miles (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[length_miles]' />
+          <map key='[length_miles (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[length_miles]' />
+          <map key='[length_miles]' value='[all_1950_2021.csv].[length_miles]' />
+          <map key='[loss (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[loss]' />
+          <map key='[loss (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[loss]' />
+          <map key='[loss]' value='[all_1950_2021.csv].[loss]' />
+          <map key='[month (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[month]' />
+          <map key='[month (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[month]' />
+          <map key='[month]' value='[all_1950_2021.csv].[month]' />
+          <map key='[num_states_affected (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[num_states_affected]' />
+          <map key='[num_states_affected (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[num_states_affected]' />
+          <map key='[num_states_affected]' value='[all_1950_2021.csv].[num_states_affected]' />
+          <map key='[start_lat (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[start_lat]' />
+          <map key='[start_lat (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[start_lat]' />
+          <map key='[start_lat]' value='[all_1950_2021.csv].[start_lat]' />
+          <map key='[start_lon (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[start_lon]' />
+          <map key='[start_lon (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[start_lon]' />
+          <map key='[start_lon]' value='[all_1950_2021.csv].[start_lon]' />
+          <map key='[state (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[state]' />
+          <map key='[state (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[state]' />
+          <map key='[state]' value='[all_1950_2021.csv].[state]' />
+          <map key='[state_fips (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[state_fips]' />
+          <map key='[state_fips (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[state_fips]' />
+          <map key='[state_fips]' value='[all_1950_2021.csv].[state_fips]' />
+          <map key='[state_num (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[state_num]' />
+          <map key='[state_num (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[state_num]' />
+          <map key='[state_num]' value='[all_1950_2021.csv].[state_num]' />
+          <map key='[state_number (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[state_number]' />
+          <map key='[state_number (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[state_number]' />
+          <map key='[state_number]' value='[all_1950_2021.csv].[state_number]' />
+          <map key='[time (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[time]' />
+          <map key='[time (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[time]' />
+          <map key='[time]' value='[all_1950_2021.csv].[time]' />
+          <map key='[time_zone (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[time_zone]' />
+          <map key='[time_zone (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[time_zone]' />
+          <map key='[time_zone]' value='[all_1950_2021.csv].[time_zone]' />
+          <map key='[tornado_number (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[tornado_number]' />
+          <map key='[tornado_number (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[tornado_number]' />
+          <map key='[tornado_number]' value='[all_1950_2021.csv].[tornado_number]' />
+          <map key='[tornado_segment (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[tornado_segment]' />
+          <map key='[tornado_segment (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[tornado_segment]' />
+          <map key='[tornado_segment]' value='[all_1950_2021.csv].[tornado_segment]' />
+          <map key='[width (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[width]' />
+          <map key='[width (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[width]' />
+          <map key='[width]' value='[all_1950_2021.csv].[width]' />
+          <map key='[year (dixie_1950_2021.csv)]' value='[dixie_1950_2021.csv].[year]' />
+          <map key='[year (torn_1950_2021.csv)]' value='[torn_1950_2021.csv].[year]' />
+          <map key='[year]' value='[all_1950_2021.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_number]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>tornado_number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[time]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_zone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_zone]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>time_zone</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_fips]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>state_fips</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_number]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>state_number</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ef_scale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ef_scale]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>ef_scale</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[injuries]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>injuries</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatalities]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>fatalities</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loss]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>loss</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crop_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crop_loss]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>crop_loss</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lat]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>start_lat</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lon]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>start_lon</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lat]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>end_lat</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lon]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>end_lon</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>length_miles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[length_miles]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>length_miles</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>width</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[width]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>width</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_states_affected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_states_affected]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>num_states_affected</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_num]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>state_num</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_segment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_segment]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>tornado_segment</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f1]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>f1</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f2]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>f2</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f3]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>f3</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f4]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>f4</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>est_fscale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[est_fscale]</local-name>
+            <parent-name>[all_1950_2021.csv]</parent-name>
+            <remote-alias>est_fscale</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_number (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>tornado_number</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[time (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_zone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_zone (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>time_zone</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_fips (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>state_fips</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_number (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>state_number</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ef_scale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ef_scale (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>ef_scale</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[injuries (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>injuries</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatalities (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>fatalities</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loss (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>loss</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crop_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crop_loss (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>crop_loss</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lat (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>start_lat</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lon (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>start_lon</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lat (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>end_lat</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lon (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>end_lon</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>length_miles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[length_miles (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>length_miles</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>width</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[width (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>width</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_states_affected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_states_affected (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>num_states_affected</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_num (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>state_num</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_segment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_segment (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>tornado_segment</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f1 (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>f1</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f2 (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>f2</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f3 (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>f3</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f4 (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>f4</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>est_fscale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[est_fscale (dixie_1950_2021.csv)]</local-name>
+            <parent-name>[dixie_1950_2021.csv]</parent-name>
+            <remote-alias>est_fscale</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_number (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>tornado_number</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[time (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_zone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_zone (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>time_zone</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_fips (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>state_fips</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_number (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>state_number</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ef_scale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ef_scale (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>ef_scale</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[injuries (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>injuries</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatalities (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>fatalities</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loss (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>loss</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crop_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crop_loss (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>crop_loss</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lat (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>start_lat</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lon (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>start_lon</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lat (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>end_lat</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lon (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>end_lon</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>length_miles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[length_miles (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>length_miles</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>width</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[width (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>width</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_states_affected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_states_affected (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>num_states_affected</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_num (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>state_num</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_segment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_segment (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>tornado_segment</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f1 (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>f1</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f2 (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>f2</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f3 (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>f3</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f4 (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>f4</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>est_fscale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[est_fscale (torn_1950_2021.csv)]</local-name>
+            <parent-name>[torn_1950_2021.csv]</parent-name>
+            <remote-alias>est_fscale</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='F1 (dixie 1950 2021.csv)' datatype='integer' name='[F1 (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (torn 1950 2021.csv)' datatype='integer' name='[F1 (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='all_1950_2021.csv' datatype='table' name='[__tableau_internal_object_id__].[all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='dixie_1950_2021.csv' datatype='table' name='[__tableau_internal_object_id__].[dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='torn_1950_2021.csv' datatype='table' name='[__tableau_internal_object_id__].[torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE]' role='measure' type='quantitative' />
+      <column caption='Crop Loss (Dixie 1950 2021.Csv)' datatype='real' name='[crop_loss (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Crop Loss (Torn 1950 2021.Csv)' datatype='real' name='[crop_loss (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Crop Loss' datatype='real' name='[crop_loss]' role='measure' type='quantitative' />
+      <column caption='Date (Dixie 1950 2021.Csv)' datatype='date' name='[date (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='Date (Torn 1950 2021.Csv)' datatype='date' name='[date (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Day (Dixie 1950 2021.Csv)' datatype='integer' name='[day (dixie_1950_2021.csv)]' role='dimension' type='quantitative' />
+      <column caption='Day (Torn 1950 2021.Csv)' datatype='integer' name='[day (torn_1950_2021.csv)]' role='dimension' type='quantitative' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Ef Scale (Dixie 1950 2021.Csv)' datatype='integer' name='[ef_scale (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Ef Scale (Torn 1950 2021.Csv)' datatype='integer' name='[ef_scale (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Ef Scale' datatype='integer' name='[ef_scale]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat (Dixie 1950 2021.Csv)' datatype='real' name='[end_lat (dixie_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat (Torn 1950 2021.Csv)' datatype='real' name='[end_lat (torn_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat' datatype='real' name='[end_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lon (Dixie 1950 2021.Csv)' datatype='real' name='[end_lon (dixie_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lon (Torn 1950 2021.Csv)' datatype='real' name='[end_lon (torn_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lon' datatype='real' name='[end_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Est Fscale (Dixie 1950 2021.Csv)' datatype='integer' name='[est_fscale (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Est Fscale (Torn 1950 2021.Csv)' datatype='integer' name='[est_fscale (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Est Fscale' datatype='integer' name='[est_fscale]' role='measure' type='quantitative' />
+      <column caption='F1 (Dixie 1950 2021.Csv)' datatype='integer' name='[f1 (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (Torn 1950 2021.Csv)' datatype='integer' name='[f1 (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F11' datatype='integer' name='[f1]' role='measure' type='quantitative' />
+      <column caption='F2 (Dixie 1950 2021.Csv)' datatype='integer' name='[f2 (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F2 (Torn 1950 2021.Csv)' datatype='integer' name='[f2 (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F2' datatype='integer' name='[f2]' role='measure' type='quantitative' />
+      <column caption='F3 (Dixie 1950 2021.Csv)' datatype='integer' name='[f3 (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F3 (Torn 1950 2021.Csv)' datatype='integer' name='[f3 (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F3' datatype='integer' name='[f3]' role='measure' type='quantitative' />
+      <column caption='F4 (Dixie 1950 2021.Csv)' datatype='integer' name='[f4 (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F4 (Torn 1950 2021.Csv)' datatype='integer' name='[f4 (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='F4' datatype='integer' name='[f4]' role='measure' type='quantitative' />
+      <column caption='Fatalities (Dixie 1950 2021.Csv)' datatype='integer' name='[fatalities (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Fatalities (Torn 1950 2021.Csv)' datatype='integer' name='[fatalities (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Fatalities' datatype='integer' name='[fatalities]' role='measure' type='quantitative' />
+      <column caption='Injuries (Dixie 1950 2021.Csv)' datatype='integer' name='[injuries (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Injuries (Torn 1950 2021.Csv)' datatype='integer' name='[injuries (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Injuries' datatype='integer' name='[injuries]' role='measure' type='quantitative' />
+      <column caption='Length Miles (Dixie 1950 2021.Csv)' datatype='real' name='[length_miles (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Length Miles (Torn 1950 2021.Csv)' datatype='real' name='[length_miles (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Length Miles' datatype='real' name='[length_miles]' role='measure' type='quantitative' />
+      <column caption='Loss (Dixie 1950 2021.Csv)' datatype='real' name='[loss (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Loss (Torn 1950 2021.Csv)' datatype='real' name='[loss (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Loss' datatype='real' name='[loss]' role='measure' type='quantitative' />
+      <column caption='Month (Dixie 1950 2021.Csv)' datatype='integer' name='[month (dixie_1950_2021.csv)]' role='dimension' type='quantitative' />
+      <column caption='Month (Torn 1950 2021.Csv)' datatype='integer' name='[month (torn_1950_2021.csv)]' role='dimension' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Num States Affected (Dixie 1950 2021.Csv)' datatype='integer' name='[num_states_affected (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Num States Affected (Torn 1950 2021.Csv)' datatype='integer' name='[num_states_affected (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Num States Affected' datatype='integer' name='[num_states_affected]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lat (Dixie 1950 2021.Csv)' datatype='real' name='[start_lat (dixie_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lat (Torn 1950 2021.Csv)' datatype='real' name='[start_lat (torn_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lat' datatype='real' name='[start_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lon (Dixie 1950 2021.Csv)' datatype='real' name='[start_lon (dixie_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lon (Torn 1950 2021.Csv)' datatype='real' name='[start_lon (torn_1950_2021.csv)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lon' datatype='real' name='[start_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='State (Dixie 1950 2021.Csv)' datatype='string' name='[state (dixie_1950_2021.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State (Torn 1950 2021.Csv)' datatype='string' name='[state (torn_1950_2021.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Fips (Dixie 1950 2021.Csv)' datatype='integer' name='[state_fips (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='State Fips (Torn 1950 2021.Csv)' datatype='integer' name='[state_fips (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='State Fips' datatype='integer' name='[state_fips]' role='measure' type='quantitative' />
+      <column caption='State Num (Dixie 1950 2021.Csv)' datatype='integer' name='[state_num (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='State Num (Torn 1950 2021.Csv)' datatype='integer' name='[state_num (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='State Num' datatype='integer' name='[state_num]' role='dimension' type='ordinal' />
+      <column caption='State Number (Dixie 1950 2021.Csv)' datatype='integer' name='[state_number (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='State Number (Torn 1950 2021.Csv)' datatype='integer' name='[state_number (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='State Number' datatype='integer' name='[state_number]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Time (Dixie 1950 2021.Csv)' datatype='datetime' name='[time (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Time (Torn 1950 2021.Csv)' datatype='datetime' name='[time (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+      <column caption='Time Zone (Dixie 1950 2021.Csv)' datatype='integer' name='[time_zone (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Time Zone (Torn 1950 2021.Csv)' datatype='integer' name='[time_zone (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Time Zone' datatype='integer' name='[time_zone]' role='measure' type='quantitative' />
+      <column caption='Tornado Number (Dixie 1950 2021.Csv)' datatype='integer' name='[tornado_number (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='Tornado Number (Torn 1950 2021.Csv)' datatype='integer' name='[tornado_number (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+      <column caption='Tornado Number' datatype='integer' name='[tornado_number]' role='dimension' type='ordinal' />
+      <column caption='Tornado Segment (Dixie 1950 2021.Csv)' datatype='integer' name='[tornado_segment (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Tornado Segment (Torn 1950 2021.Csv)' datatype='integer' name='[tornado_segment (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Tornado Segment' datatype='integer' name='[tornado_segment]' role='measure' type='quantitative' />
+      <column caption='Width (Dixie 1950 2021.Csv)' datatype='real' name='[width (dixie_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Width (Torn 1950 2021.Csv)' datatype='real' name='[width (torn_1950_2021.csv)]' role='measure' type='quantitative' />
+      <column caption='Width' datatype='real' name='[width]' role='measure' type='quantitative' />
+      <column caption='Year (Dixie 1950 2021.Csv)' datatype='integer' name='[year (dixie_1950_2021.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year (Torn 1950 2021.Csv)' datatype='integer' name='[year (torn_1950_2021.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[tornado_number (dixie_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (dixie_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tornado_number (torn_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (torn_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tornado_number]' derivation='Count' name='[cnt:tornado_number:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (dixie_1950_2021.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (torn_1950_2021.csv):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='all_1950_2021.csv' id='all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4'>
+            <properties context=''>
+              <relation connection='textscan.0liwhq70j5ff2k16lkomd16hb431' name='all_1950_2021.csv' table='[all_1950_2021#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='tornado_number' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='integer' name='month' ordinal='3' />
+                  <column datatype='integer' name='day' ordinal='4' />
+                  <column datatype='date' name='date' ordinal='5' />
+                  <column datatype='datetime' name='time' ordinal='6' />
+                  <column datatype='integer' name='time_zone' ordinal='7' />
+                  <column datatype='string' name='state' ordinal='8' />
+                  <column datatype='integer' name='state_fips' ordinal='9' />
+                  <column datatype='integer' name='state_number' ordinal='10' />
+                  <column datatype='integer' name='ef_scale' ordinal='11' />
+                  <column datatype='integer' name='injuries' ordinal='12' />
+                  <column datatype='integer' name='fatalities' ordinal='13' />
+                  <column datatype='real' name='loss' ordinal='14' />
+                  <column datatype='real' name='crop_loss' ordinal='15' />
+                  <column datatype='real' name='start_lat' ordinal='16' />
+                  <column datatype='real' name='start_lon' ordinal='17' />
+                  <column datatype='real' name='end_lat' ordinal='18' />
+                  <column datatype='real' name='end_lon' ordinal='19' />
+                  <column datatype='real' name='length_miles' ordinal='20' />
+                  <column datatype='real' name='width' ordinal='21' />
+                  <column datatype='integer' name='num_states_affected' ordinal='22' />
+                  <column datatype='integer' name='state_num' ordinal='23' />
+                  <column datatype='integer' name='tornado_segment' ordinal='24' />
+                  <column datatype='integer' name='f1' ordinal='25' />
+                  <column datatype='integer' name='f2' ordinal='26' />
+                  <column datatype='integer' name='f3' ordinal='27' />
+                  <column datatype='integer' name='f4' ordinal='28' />
+                  <column datatype='integer' name='est_fscale' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='dixie_1950_2021.csv' id='dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9'>
+            <properties context=''>
+              <relation connection='textscan.0liwhq70j5ff2k16lkomd16hb431' name='dixie_1950_2021.csv' table='[dixie_1950_2021#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='tornado_number' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='integer' name='month' ordinal='3' />
+                  <column datatype='integer' name='day' ordinal='4' />
+                  <column datatype='date' name='date' ordinal='5' />
+                  <column datatype='datetime' name='time' ordinal='6' />
+                  <column datatype='integer' name='time_zone' ordinal='7' />
+                  <column datatype='string' name='state' ordinal='8' />
+                  <column datatype='integer' name='state_fips' ordinal='9' />
+                  <column datatype='integer' name='state_number' ordinal='10' />
+                  <column datatype='integer' name='ef_scale' ordinal='11' />
+                  <column datatype='integer' name='injuries' ordinal='12' />
+                  <column datatype='integer' name='fatalities' ordinal='13' />
+                  <column datatype='real' name='loss' ordinal='14' />
+                  <column datatype='real' name='crop_loss' ordinal='15' />
+                  <column datatype='real' name='start_lat' ordinal='16' />
+                  <column datatype='real' name='start_lon' ordinal='17' />
+                  <column datatype='real' name='end_lat' ordinal='18' />
+                  <column datatype='real' name='end_lon' ordinal='19' />
+                  <column datatype='real' name='length_miles' ordinal='20' />
+                  <column datatype='real' name='width' ordinal='21' />
+                  <column datatype='integer' name='num_states_affected' ordinal='22' />
+                  <column datatype='integer' name='state_num' ordinal='23' />
+                  <column datatype='integer' name='tornado_segment' ordinal='24' />
+                  <column datatype='integer' name='f1' ordinal='25' />
+                  <column datatype='integer' name='f2' ordinal='26' />
+                  <column datatype='integer' name='f3' ordinal='27' />
+                  <column datatype='integer' name='f4' ordinal='28' />
+                  <column datatype='integer' name='est_fscale' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='torn_1950_2021.csv' id='torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE'>
+            <properties context=''>
+              <relation connection='textscan.0liwhq70j5ff2k16lkomd16hb431' name='torn_1950_2021.csv' table='[torn_1950_2021#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='tornado_number' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='integer' name='month' ordinal='3' />
+                  <column datatype='integer' name='day' ordinal='4' />
+                  <column datatype='date' name='date' ordinal='5' />
+                  <column datatype='datetime' name='time' ordinal='6' />
+                  <column datatype='integer' name='time_zone' ordinal='7' />
+                  <column datatype='string' name='state' ordinal='8' />
+                  <column datatype='integer' name='state_fips' ordinal='9' />
+                  <column datatype='integer' name='state_number' ordinal='10' />
+                  <column datatype='integer' name='ef_scale' ordinal='11' />
+                  <column datatype='integer' name='injuries' ordinal='12' />
+                  <column datatype='integer' name='fatalities' ordinal='13' />
+                  <column datatype='real' name='loss' ordinal='14' />
+                  <column datatype='real' name='crop_loss' ordinal='15' />
+                  <column datatype='real' name='start_lat' ordinal='16' />
+                  <column datatype='real' name='start_lon' ordinal='17' />
+                  <column datatype='real' name='end_lat' ordinal='18' />
+                  <column datatype='real' name='end_lon' ordinal='19' />
+                  <column datatype='real' name='length_miles' ordinal='20' />
+                  <column datatype='real' name='width' ordinal='21' />
+                  <column datatype='integer' name='num_states_affected' ordinal='22' />
+                  <column datatype='integer' name='state_num' ordinal='23' />
+                  <column datatype='integer' name='tornado_segment' ordinal='24' />
+                  <column datatype='integer' name='f1' ordinal='25' />
+                  <column datatype='integer' name='f2' ordinal='26' />
+                  <column datatype='integer' name='f3' ordinal='27' />
+                  <column datatype='integer' name='f4' ordinal='28' />
+                  <column datatype='integer' name='est_fscale' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[date]' />
+              <expression op='[date (dixie_1950_2021.csv)]' />
+            </expression>
+            <first-end-point object-id='all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4' />
+            <second-end-point object-id='dixie_1950_2021.csv_59D4AACBB7F642D3BE942A10DDF176F9' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[date]' />
+              <expression op='[date (torn_1950_2021.csv)]' />
+            </expression>
+            <first-end-point object-id='all_1950_2021.csv_F74B7E87DAA7431EBD897B844E8337C4' />
+            <second-end-point object-id='torn_1950_2021.csv_BA9E5F5E1A5E4BA09C99028972D5B6AE' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_1950_2021' name='federated.1xntole0vo8upm141vdfi0mdwfcp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xntole0vo8upm141vdfi0mdwfcp'>
+            <column-instance column='[tornado_number (dixie_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (dixie_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tornado_number (torn_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (torn_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Tornado Number (Dixie 1950 2021.Csv)' datatype='integer' name='[tornado_number (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+            <column caption='Tornado Number (Torn 1950 2021.Csv)' datatype='integer' name='[tornado_number (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (dixie_1950_2021.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (torn_1950_2021.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1xntole0vo8upm141vdfi0mdwfcp].[Multiple Values]</rows>
+        <cols>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{3FDF4077-CE56-40CD-99FD-11AE9E832F0C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_1950_2021' name='federated.1xntole0vo8upm141vdfi0mdwfcp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xntole0vo8upm141vdfi0mdwfcp'>
+            <column-instance column='[tornado_number (dixie_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (dixie_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tornado_number (torn_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (torn_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tornado_number]' derivation='Count' name='[cnt:tornado_number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Tornado Number (Dixie 1950 2021.Csv)' datatype='integer' name='[tornado_number (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+            <column caption='Tornado Number (Torn 1950 2021.Csv)' datatype='integer' name='[tornado_number (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+            <column caption='Tornado Number' datatype='integer' name='[tornado_number]' role='dimension' type='ordinal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (torn_1950_2021.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (dixie_1950_2021.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (torn_1950_2021.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (dixie_1950_2021.csv):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1xntole0vo8upm141vdfi0mdwfcp].[Multiple Values]</rows>
+        <cols>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{45A80A76-726B-483E-9883-529F2622D609}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_1950_2021' name='federated.1xntole0vo8upm141vdfi0mdwfcp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xntole0vo8upm141vdfi0mdwfcp'>
+            <column-instance column='[tornado_number (dixie_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (dixie_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tornado_number (torn_1950_2021.csv)]' derivation='Count' name='[cnt:tornado_number (torn_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year (torn_1950_2021.csv)]' derivation='None' name='[none:year (torn_1950_2021.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='Tornado Number (Dixie 1950 2021.Csv)' datatype='integer' name='[tornado_number (dixie_1950_2021.csv)]' role='dimension' type='ordinal' />
+            <column caption='Tornado Number (Torn 1950 2021.Csv)' datatype='integer' name='[tornado_number (torn_1950_2021.csv)]' role='dimension' type='ordinal' />
+            <column caption='Year (Torn 1950 2021.Csv)' datatype='integer' name='[year (torn_1950_2021.csv)]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (dixie_1950_2021.csv):qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (torn_1950_2021.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (dixie_1950_2021.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (torn_1950_2021.csv):qk] + [federated.1xntole0vo8upm141vdfi0mdwfcp].[cnt:tornado_number (dixie_1950_2021.csv):qk])</rows>
+        <cols>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:year (torn_1950_2021.csv):qk]</cols>
+      </table>
+      <simple-id uuid='{3D6E524D-4EFF-476B-8D44-C9BCD87FE37E}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:state_num:ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number (dixie_1950_2021.csv):ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number (torn_1950_2021.csv):ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number:ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3696CE10-6DF4-47B0-A367-90454C547653}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number (dixie_1950_2021.csv):ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number (torn_1950_2021.csv):ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number:ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B25787AD-9887-4724-A386-04333B5EDF8C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[:Measure Names]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number (dixie_1950_2021.csv):ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:tornado_number (torn_1950_2021.csv):ok]</field>
+            <field>[federated.1xntole0vo8upm141vdfi0mdwfcp].[none:year (torn_1950_2021.csv):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AB3B1E2E-C0E0-40DF-8CBA-8E5D3985F333}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
