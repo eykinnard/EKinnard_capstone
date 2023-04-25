@@ -1,0 +1,1795 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='water_temp_tableau' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='all_water' inline='true' name='federated.0ti76r0157oqzv178pldh0jfq8f3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_water' name='textscan.1b2o95701y4m4l0zqr6xl0krmd2s'>
+            <connection class='textscan' directory='C:/Users/eykin/Desktop/NSS/Capstone/data' filename='all_water.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1b2o95701y4m4l0zqr6xl0krmd2s' name='all_water.csv' table='[all_water#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='tornado_number' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='integer' name='month' ordinal='3' />
+            <column datatype='integer' name='day' ordinal='4' />
+            <column datatype='date' name='date' ordinal='5' />
+            <column datatype='datetime' name='time' ordinal='6' />
+            <column datatype='integer' name='time_zone' ordinal='7' />
+            <column datatype='string' name='state' ordinal='8' />
+            <column datatype='integer' name='state_fips' ordinal='9' />
+            <column datatype='integer' name='state_number' ordinal='10' />
+            <column datatype='integer' name='ef_scale' ordinal='11' />
+            <column datatype='integer' name='injuries' ordinal='12' />
+            <column datatype='integer' name='fatalities' ordinal='13' />
+            <column datatype='real' name='loss' ordinal='14' />
+            <column datatype='real' name='crop_loss' ordinal='15' />
+            <column datatype='real' name='start_lat' ordinal='16' />
+            <column datatype='real' name='start_lon' ordinal='17' />
+            <column datatype='real' name='end_lat' ordinal='18' />
+            <column datatype='real' name='end_lon' ordinal='19' />
+            <column datatype='real' name='length_miles' ordinal='20' />
+            <column datatype='real' name='width' ordinal='21' />
+            <column datatype='integer' name='num_states_affected' ordinal='22' />
+            <column datatype='integer' name='state_num' ordinal='23' />
+            <column datatype='integer' name='tornado_segment' ordinal='24' />
+            <column datatype='integer' name='f1' ordinal='25' />
+            <column datatype='integer' name='f2' ordinal='26' />
+            <column datatype='integer' name='f3' ordinal='27' />
+            <column datatype='integer' name='f4' ordinal='28' />
+            <column datatype='integer' name='est_fscale' ordinal='29' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1b2o95701y4m4l0zqr6xl0krmd2s' name='all_water.csv' table='[all_water#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='tornado_number' ordinal='1' />
+              <column datatype='integer' name='year' ordinal='2' />
+              <column datatype='integer' name='month' ordinal='3' />
+              <column datatype='integer' name='day' ordinal='4' />
+              <column datatype='date' name='date' ordinal='5' />
+              <column datatype='datetime' name='time' ordinal='6' />
+              <column datatype='integer' name='time_zone' ordinal='7' />
+              <column datatype='string' name='state' ordinal='8' />
+              <column datatype='integer' name='state_fips' ordinal='9' />
+              <column datatype='integer' name='state_number' ordinal='10' />
+              <column datatype='integer' name='ef_scale' ordinal='11' />
+              <column datatype='integer' name='injuries' ordinal='12' />
+              <column datatype='integer' name='fatalities' ordinal='13' />
+              <column datatype='real' name='loss' ordinal='14' />
+              <column datatype='real' name='crop_loss' ordinal='15' />
+              <column datatype='real' name='start_lat' ordinal='16' />
+              <column datatype='real' name='start_lon' ordinal='17' />
+              <column datatype='real' name='end_lat' ordinal='18' />
+              <column datatype='real' name='end_lon' ordinal='19' />
+              <column datatype='real' name='length_miles' ordinal='20' />
+              <column datatype='real' name='width' ordinal='21' />
+              <column datatype='integer' name='num_states_affected' ordinal='22' />
+              <column datatype='integer' name='state_num' ordinal='23' />
+              <column datatype='integer' name='tornado_segment' ordinal='24' />
+              <column datatype='integer' name='f1' ordinal='25' />
+              <column datatype='integer' name='f2' ordinal='26' />
+              <column datatype='integer' name='f3' ordinal='27' />
+              <column datatype='integer' name='f4' ordinal='28' />
+              <column datatype='integer' name='est_fscale' ordinal='29' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1b2o95701y4m4l0zqr6xl0krmd2s' name='water_temp.csv' table='[water_temp#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='real' name='latitude' ordinal='1' />
+              <column datatype='real' name='longitude' ordinal='2' />
+              <column datatype='real' name='temperature' ordinal='3' />
+              <column datatype='integer' name='year' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (water_temp.csv)]' value='[water_temp.csv].[F1]' />
+          <map key='[F1]' value='[all_water.csv].[F1]' />
+          <map key='[crop_loss]' value='[all_water.csv].[crop_loss]' />
+          <map key='[date]' value='[all_water.csv].[date]' />
+          <map key='[day]' value='[all_water.csv].[day]' />
+          <map key='[ef_scale]' value='[all_water.csv].[ef_scale]' />
+          <map key='[end_lat]' value='[all_water.csv].[end_lat]' />
+          <map key='[end_lon]' value='[all_water.csv].[end_lon]' />
+          <map key='[est_fscale]' value='[all_water.csv].[est_fscale]' />
+          <map key='[f1]' value='[all_water.csv].[f1]' />
+          <map key='[f2]' value='[all_water.csv].[f2]' />
+          <map key='[f3]' value='[all_water.csv].[f3]' />
+          <map key='[f4]' value='[all_water.csv].[f4]' />
+          <map key='[fatalities]' value='[all_water.csv].[fatalities]' />
+          <map key='[injuries]' value='[all_water.csv].[injuries]' />
+          <map key='[latitude]' value='[water_temp.csv].[latitude]' />
+          <map key='[length_miles]' value='[all_water.csv].[length_miles]' />
+          <map key='[longitude]' value='[water_temp.csv].[longitude]' />
+          <map key='[loss]' value='[all_water.csv].[loss]' />
+          <map key='[month]' value='[all_water.csv].[month]' />
+          <map key='[num_states_affected]' value='[all_water.csv].[num_states_affected]' />
+          <map key='[start_lat]' value='[all_water.csv].[start_lat]' />
+          <map key='[start_lon]' value='[all_water.csv].[start_lon]' />
+          <map key='[state]' value='[all_water.csv].[state]' />
+          <map key='[state_fips]' value='[all_water.csv].[state_fips]' />
+          <map key='[state_num]' value='[all_water.csv].[state_num]' />
+          <map key='[state_number]' value='[all_water.csv].[state_number]' />
+          <map key='[temperature]' value='[water_temp.csv].[temperature]' />
+          <map key='[time]' value='[all_water.csv].[time]' />
+          <map key='[time_zone]' value='[all_water.csv].[time_zone]' />
+          <map key='[tornado_number]' value='[all_water.csv].[tornado_number]' />
+          <map key='[tornado_segment]' value='[all_water.csv].[tornado_segment]' />
+          <map key='[width]' value='[all_water.csv].[width]' />
+          <map key='[year (water_temp.csv)]' value='[water_temp.csv].[year]' />
+          <map key='[year]' value='[all_water.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[water_temp.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_number]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>tornado_number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[time]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_zone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_zone]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>time_zone</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_fips]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>state_fips</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_number]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>state_number</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ef_scale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ef_scale]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>ef_scale</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[injuries]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>injuries</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatalities]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>fatalities</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loss]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>loss</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crop_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crop_loss]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>crop_loss</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lat]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>start_lat</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lon]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>start_lon</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lat]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>end_lat</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lon]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>end_lon</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>length_miles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[length_miles]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>length_miles</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>width</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[width]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>width</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_states_affected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_states_affected]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>num_states_affected</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[state_num]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>state_num</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tornado_segment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tornado_segment]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>tornado_segment</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f1]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>f1</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f2]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>f2</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f3]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>f3</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f4]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>f4</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>est_fscale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[est_fscale]</local-name>
+            <parent-name>[all_water.csv]</parent-name>
+            <remote-alias>est_fscale</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (water_temp.csv)]</local-name>
+            <parent-name>[water_temp.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[water_temp.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[water_temp.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperature]</local-name>
+            <parent-name>[water_temp.csv]</parent-name>
+            <remote-alias>temperature</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (water_temp.csv)]</local-name>
+            <parent-name>[water_temp.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0ti76r0157oqzv178pldh0jfq8f3].[cnt:tornado_number:qk]&quot;' value='Number of Tornadoes' />
+        </aliases>
+      </column>
+      <column caption='F1 (water temp.csv)' datatype='integer' name='[F1 (water_temp.csv)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='all_water.csv' datatype='table' name='[__tableau_internal_object_id__].[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='water_temp.csv' datatype='table' name='[__tableau_internal_object_id__].[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]' role='measure' type='quantitative' />
+      <column caption='Crop Loss' datatype='real' name='[crop_loss]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Ef Scale' datatype='integer' name='[ef_scale]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat' datatype='real' name='[end_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Lon' datatype='real' name='[end_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Est Fscale' datatype='integer' name='[est_fscale]' role='measure' type='quantitative' />
+      <column caption='F11' datatype='integer' name='[f1]' role='measure' type='quantitative' />
+      <column caption='F2' datatype='integer' name='[f2]' role='measure' type='quantitative' />
+      <column caption='F3' datatype='integer' name='[f3]' role='measure' type='quantitative' />
+      <column caption='F4' datatype='integer' name='[f4]' role='measure' type='quantitative' />
+      <column caption='Fatalities' datatype='integer' name='[fatalities]' role='measure' type='quantitative' />
+      <column caption='Injuries' datatype='integer' name='[injuries]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Length Miles' datatype='real' name='[length_miles]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Loss' datatype='real' name='[loss]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Num States Affected' datatype='integer' name='[num_states_affected]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lat' datatype='real' name='[start_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Lon' datatype='real' name='[start_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Fips' datatype='integer' name='[state_fips]' role='measure' type='quantitative' />
+      <column caption='State Num' datatype='integer' name='[state_num]' role='dimension' type='ordinal' />
+      <column caption='State Number' datatype='integer' name='[state_number]' role='dimension' type='ordinal' />
+      <column caption='Temperature' datatype='real' name='[temperature]' role='measure' type='quantitative' />
+      <column aggregation='Hour' caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+      <column caption='Time Zone' datatype='integer' name='[time_zone]' role='measure' type='quantitative' />
+      <column caption='Tornado Number' datatype='integer' name='[tornado_number]' role='dimension' type='ordinal' />
+      <column caption='Tornado Segment' datatype='integer' name='[tornado_segment]' role='measure' type='quantitative' />
+      <column caption='Width' datatype='real' name='[width]' role='measure' type='quantitative' />
+      <column caption='Year (Water Temp.Csv)' datatype='integer' name='[year (water_temp.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[temperature]' derivation='Attribute' name='[attr:temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tornado_number]' derivation='Count' name='[cnt:tornado_number:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[temperature]' derivation='None' name='[none:temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[temperature]' derivation='Sum' name='[sum:temperature:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/eykin/Desktop/all_water.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/25/2023 05:08:19 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15' table='[Extract].[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15' table='[Extract].[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]' type='table' />
+            <relation name='water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB' table='[Extract].[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[F1 (water_temp.csv)]' value='[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB].[F1]' />
+            <map key='[F1]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[F1]' />
+            <map key='[crop_loss]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[crop_loss]' />
+            <map key='[date]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[date]' />
+            <map key='[day]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[day]' />
+            <map key='[ef_scale]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[ef_scale]' />
+            <map key='[end_lat]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[end_lat]' />
+            <map key='[end_lon]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[end_lon]' />
+            <map key='[est_fscale]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[est_fscale]' />
+            <map key='[f1]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[f11]' />
+            <map key='[f2]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[f2]' />
+            <map key='[f3]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[f3]' />
+            <map key='[f4]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[f4]' />
+            <map key='[fatalities]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[fatalities]' />
+            <map key='[injuries]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[injuries]' />
+            <map key='[latitude]' value='[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB].[latitude]' />
+            <map key='[length_miles]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[length_miles]' />
+            <map key='[longitude]' value='[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB].[longitude]' />
+            <map key='[loss]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[loss]' />
+            <map key='[month]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[month]' />
+            <map key='[num_states_affected]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[num_states_affected]' />
+            <map key='[start_lat]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[start_lat]' />
+            <map key='[start_lon]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[start_lon]' />
+            <map key='[state]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[state]' />
+            <map key='[state_fips]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[state_fips]' />
+            <map key='[state_num]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[state_num]' />
+            <map key='[state_number]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[state_number]' />
+            <map key='[temperature]' value='[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB].[temperature]' />
+            <map key='[time]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[time]' />
+            <map key='[time_zone]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[time_zone]' />
+            <map key='[tornado_number]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[tornado_number]' />
+            <map key='[tornado_segment]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[tornado_segment]' />
+            <map key='[width]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[width]' />
+            <map key='[year (water_temp.csv)]' value='[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB].[year]' />
+            <map key='[year]' value='[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15].[year]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='all_water' increment-value='%null%' refresh-type='create' rows-inserted='33953' timestamp-start='2023-04-25 17:08:17.755' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33948</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tornado_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tornado_number]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>tornado_number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4202</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>3</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[day]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>day</remote-alias>
+              <ordinal>4</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>all_water.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4440</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[time]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>time</remote-alias>
+              <ordinal>6</ordinal>
+              <family>all_water.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>1931</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_zone</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[time_zone]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>time_zone</remote-alias>
+              <ordinal>7</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>8</ordinal>
+              <family>all_water.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state_fips</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[state_fips]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>state_fips</remote-alias>
+              <ordinal>9</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[state_number]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>state_number</remote-alias>
+              <ordinal>10</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>305</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ef_scale</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ef_scale]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>ef_scale</remote-alias>
+              <ordinal>11</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[injuries]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>injuries</remote-alias>
+              <ordinal>12</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fatalities</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fatalities]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>fatalities</remote-alias>
+              <ordinal>13</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loss</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[loss]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>loss</remote-alias>
+              <ordinal>14</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>319</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crop_loss</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[crop_loss]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>crop_loss</remote-alias>
+              <ordinal>15</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start_lat]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>start_lat</remote-alias>
+              <ordinal>16</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3999</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_lon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[start_lon]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>start_lon</remote-alias>
+              <ordinal>17</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3964</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end_lat]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>end_lat</remote-alias>
+              <ordinal>18</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4028</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_lon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[end_lon]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>end_lon</remote-alias>
+              <ordinal>19</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4167</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>length_miles</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[length_miles]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>length_miles</remote-alias>
+              <ordinal>20</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1317</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>width</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[width]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>width</remote-alias>
+              <ordinal>21</ordinal>
+              <family>all_water.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_states_affected</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_states_affected]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>num_states_affected</remote-alias>
+              <ordinal>22</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[state_num]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>state_num</remote-alias>
+              <ordinal>23</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tornado_segment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tornado_segment]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>tornado_segment</remote-alias>
+              <ordinal>24</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>f11</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[f1]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>f11</remote-alias>
+              <ordinal>25</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>439</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>f2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[f2]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>f2</remote-alias>
+              <ordinal>26</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>279</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>f3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[f3]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>f3</remote-alias>
+              <ordinal>27</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>264</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>f4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[f4]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>f4</remote-alias>
+              <ordinal>28</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>232</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>est_fscale</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[est_fscale]</local-name>
+              <parent-name>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</parent-name>
+              <remote-alias>est_fscale</remote-alias>
+              <ordinal>29</ordinal>
+              <family>all_water.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1 (water_temp.csv)]</local-name>
+              <parent-name>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>30</ordinal>
+              <family>water_temp.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>31</ordinal>
+              <family>water_temp.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>32</ordinal>
+              <family>water_temp.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>temperature</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[temperature]</local-name>
+              <parent-name>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</parent-name>
+              <remote-alias>temperature</remote-alias>
+              <ordinal>33</ordinal>
+              <family>water_temp.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year (water_temp.csv)]</local-name>
+              <parent-name>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>34</ordinal>
+              <family>water_temp.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ti76r0157oqzv178pldh0jfq8f3].[cnt:tornado_number:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ti76r0157oqzv178pldh0jfq8f3].[attr:temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ti76r0157oqzv178pldh0jfq8f3].[none:temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ti76r0157oqzv178pldh0jfq8f3].[sum:temperature:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='all_water.csv' id='all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15'>
+            <properties context=''>
+              <relation connection='textscan.1b2o95701y4m4l0zqr6xl0krmd2s' name='all_water.csv' table='[all_water#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='tornado_number' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='integer' name='month' ordinal='3' />
+                  <column datatype='integer' name='day' ordinal='4' />
+                  <column datatype='date' name='date' ordinal='5' />
+                  <column datatype='datetime' name='time' ordinal='6' />
+                  <column datatype='integer' name='time_zone' ordinal='7' />
+                  <column datatype='string' name='state' ordinal='8' />
+                  <column datatype='integer' name='state_fips' ordinal='9' />
+                  <column datatype='integer' name='state_number' ordinal='10' />
+                  <column datatype='integer' name='ef_scale' ordinal='11' />
+                  <column datatype='integer' name='injuries' ordinal='12' />
+                  <column datatype='integer' name='fatalities' ordinal='13' />
+                  <column datatype='real' name='loss' ordinal='14' />
+                  <column datatype='real' name='crop_loss' ordinal='15' />
+                  <column datatype='real' name='start_lat' ordinal='16' />
+                  <column datatype='real' name='start_lon' ordinal='17' />
+                  <column datatype='real' name='end_lat' ordinal='18' />
+                  <column datatype='real' name='end_lon' ordinal='19' />
+                  <column datatype='real' name='length_miles' ordinal='20' />
+                  <column datatype='real' name='width' ordinal='21' />
+                  <column datatype='integer' name='num_states_affected' ordinal='22' />
+                  <column datatype='integer' name='state_num' ordinal='23' />
+                  <column datatype='integer' name='tornado_segment' ordinal='24' />
+                  <column datatype='integer' name='f1' ordinal='25' />
+                  <column datatype='integer' name='f2' ordinal='26' />
+                  <column datatype='integer' name='f3' ordinal='27' />
+                  <column datatype='integer' name='f4' ordinal='28' />
+                  <column datatype='integer' name='est_fscale' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15' table='[Extract].[all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15]' type='table' />
+            </properties>
+          </object>
+          <object caption='water_temp.csv' id='water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB'>
+            <properties context=''>
+              <relation connection='textscan.1b2o95701y4m4l0zqr6xl0krmd2s' name='water_temp.csv' table='[water_temp#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='latitude' ordinal='1' />
+                  <column datatype='real' name='longitude' ordinal='2' />
+                  <column datatype='real' name='temperature' ordinal='3' />
+                  <column datatype='integer' name='year' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB' table='[Extract].[water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[year]' />
+              <expression op='[year (water_temp.csv)]' />
+            </expression>
+            <first-end-point object-id='all_water.csv_12CFC711030D40EDB9EF4EB112F6DF15' />
+            <second-end-point object-id='water_temp.csv_4AEBFEF1E8CD4712A0B0581C1C65C3FB' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Number of Tornadoes Vs. Water Temperature</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_water' name='federated.0ti76r0157oqzv178pldh0jfq8f3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ti76r0157oqzv178pldh0jfq8f3'>
+            <column-instance column='[tornado_number]' derivation='Count' name='[cnt:tornado_number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[temperature]' derivation='Sum' name='[sum:temperature:qk]' pivot='key' type='quantitative' />
+            <column caption='Temperature' datatype='real' name='[temperature]' role='measure' type='quantitative' />
+            <column caption='Tornado Number' datatype='integer' name='[tornado_number]' role='dimension' type='ordinal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0ti76r0157oqzv178pldh0jfq8f3].[sum:temperature:qk]' field-type='quantitative' fold='true' major-origin='80.0' major-spacing='0.10000000000000001' minor-origin='80.0' minor-spacing='0.10000000000000001' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0ti76r0157oqzv178pldh0jfq8f3].[cnt:tornado_number:qk]' scope='rows' value='Number of Tornadoes' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ti76r0157oqzv178pldh0jfq8f3].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0ti76r0157oqzv178pldh0jfq8f3].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ti76r0157oqzv178pldh0jfq8f3].[cnt:tornado_number:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0ti76r0157oqzv178pldh0jfq8f3].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ti76r0157oqzv178pldh0jfq8f3].[sum:temperature:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0ti76r0157oqzv178pldh0jfq8f3].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0ti76r0157oqzv178pldh0jfq8f3].[cnt:tornado_number:qk] + [federated.0ti76r0157oqzv178pldh0jfq8f3].[sum:temperature:qk])</rows>
+        <cols>[federated.0ti76r0157oqzv178pldh0jfq8f3].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{3D469769-C440-4941-8035-95C15D89C3AF}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_water' name='federated.0ti76r0157oqzv178pldh0jfq8f3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ti76r0157oqzv178pldh0jfq8f3'>
+            <column-instance column='[tornado_number]' derivation='Count' name='[cnt:tornado_number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[temperature]' derivation='None' name='[none:temperature:qk]' pivot='key' type='quantitative' />
+            <column caption='Temperature' datatype='real' name='[temperature]' role='measure' type='quantitative' />
+            <column caption='Tornado Number' datatype='integer' name='[tornado_number]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+        </panes>
+        <rows>[federated.0ti76r0157oqzv178pldh0jfq8f3].[cnt:tornado_number:qk]</rows>
+        <cols>[federated.0ti76r0157oqzv178pldh0jfq8f3].[none:temperature:qk]</cols>
+      </table>
+      <simple-id uuid='{9395F95D-97DF-4F27-9083-F577E4998E55}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B9B02459-99AA-4A16-B0A7-8FE51215096B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0ti76r0157oqzv178pldh0jfq8f3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ti76r0157oqzv178pldh0jfq8f3].[:Measure Names]</field>
+            <field>[federated.0ti76r0157oqzv178pldh0jfq8f3].[none:tornado_number:ok]</field>
+            <field>[federated.0ti76r0157oqzv178pldh0jfq8f3].[none:year (water_temp.csv):qk]</field>
+            <field>[federated.0ti76r0157oqzv178pldh0jfq8f3].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F83E4D9-957A-4E43-B62A-221F2A365052}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ti76r0157oqzv178pldh0jfq8f3].[none:tornado_number:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B7542861-9AF1-4516-A80A-615ADCD3D2F4}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DCA45713-CDF5-4385-B341-729BEEF90BAE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      UHL3bu6WCzA/NgTedtoaPGhuhdS928wW3fgam0j640SiYUxt9SZ5iqaVbTo07K27GEruzuZ+
+      7P0BNpJaWiQUiQMKre0dGOkk8bROW3MDRjHLXHCB1rZ9OLTVd1myHkByd2PulgvwSQYiBZDc
+      3ZIrp0GFpUkBhKVJAYSlSQGEpUkBhKVJAYSlSQGEpUkBhKVJAYSlSQGEpUkBhKVJAYSlSQGE
+      pW15+l0hs8zw0DCNh7ppb/QwdPUqeVPh8MlelubHiS5nqa5r5Whn63aOV4htteU9gGp3c/hQ
+      B3pBR0/60Ws6OdtzhKlpPwvJNOfOnCUZCciSSLGrbXkPYNM0VNvqDTP0QgHVUYVN1TB0ffVG
+      Gqu/ZEmk5O7q3C0XIJ9JsRCJkcinaD7WRvrOCPfSThqaO0n448zMTqM4PaiKArIkUnJ3ae6W
+      V4TlMyniSysA1PjqoJgllTOo9VZjGgVii0l8tbVoqiyJlNzdm7vlR3S4K2lyVz7yH6pwVax+
+      qah2GhrqtxotRNnIaVBhaVIAYWlSAGFpUgBhaVIAYWlSAGFpUgBhaVIAYWlSAGFpO1KAeNjP
+      wOAg4cXlnYgXYtvsSAHuTvvp6+1mZuKuTIcWu9qOFMBms2GzadgwMHbiAYTYJjtSAFPXyecz
+      GIomBxliV9uR12d31zHujE1w/ORJlJ14ACG2yY6sQHB7aunprt2JaCG21Y7fIsk0zccuSzNN
+      c3Xp5DYzDAObbft3bJK7N3PLdo+wR5mmiWEYsiJMcp967lMrALAje4Cd2rNI7t7MfSoFEGK3
+      KOtZSr2QIxgMki3omKZBLBImllj/aXFyMUJ0MbmpD9CW4lEisQSmCYVcmmBwnlzh4fFGNrVM
+      MLSAbmy+46Zpklx8mLuyFCc4H6KgP/xEI59ZIbQQfaLLuqzm3n9uJiwnFwnOhyk+kptNLxOc
+      D1F8gvHC6vOcv/8889kUwUCQVDa/7mfymRWW07knys2sLDEfWsAwTXKZ1dx0tvDIc9JZCM2z
+      lMo+UW56Jcl8KHI/d4VgIEgm9zC3mM/+zt/lZuiF7NrrC8A0iizGk4/8hEk0HGIl8/D/TVkL
+      MDw0iE1VGbg+QDIaYiVnELg7RCS1OuBYYIK5aAq9kP/YD9By8Vluz8ZZCk8zNb/I7Mwsqmoy
+      OHwTAKOYY2hkFJuRZXhkbNNjzCzOctefIDE/ycxCkkQiiUqeweFbAJh6noGhEQqpCKPjwU3n
+      rkSmGQ8usei/x1x0hWQyic3MMnjjzv3x5pkLhFApMHjj1qZzjUKWoZFbKHqG4ZExkokEml1j
+      8PoAaz0yDUZv9XNrZGbTuXo+zfCtMRQ9zfDovfu5KtevX+dB7++N3iRrKORzmy+Anlvmxu1x
+      KK5w49Y4ibXcgbWfGRocQFUVBgeHN50Lj7y+BgYBmBm/w9WBkbXtM3duspgtMjo0QF5ffRJl
+      LUCFUyPg9+OoqMLb0EpLXSVLOYUq5+owJqZnMbJL+IMhjI/5V1Bze8gmI0SSKaoqXBw8cozC
+      SoJKjw8AxaaimUUCwRCVnupNj9Hu9pBJLhBbylDlduKpcDE9PYevvgGAQnaJipoG9h84Tjq5
+      +QI4KjykEwvElrNUue1UuZ3MTM9R27Caa9McHD58iOV4FK9v81fUUFQN1SwQmA9RVV2D11uD
+      f2YKl8e79hlMaPoeDR2Hn+gv26Zq2PQcgfkwVZ4avF4P/ulpKmsenN7W8QeCxBdChKOJTU95
+      sakOlEKWwHwYT3UN3hoPc9PTVHofnjZ3OzT8fj/OyqonGDG4nXYCfj9OdxX51CJLupvaKsfa
+      9shyliPtbTT4XCTTq3ucMhagyFLKoKe3l2IqSSq5wNXBMc4/+xxubfWvyuGs5FhXN01VEE5k
+      SqYlw/M0HTzByYNthGNxxm72k7XX0n2sAwC9kMLQvPSc6iKxuLDpUSbC8zQfOsnxA82EYwmq
+      65ro6T5JbGH1xW6z2dGNIqZRRHmCj1ES4XlaD53keEcTodgSNfUtdHefJBJazTVNg+H+j3DW
+      d3K4o2nTucX8Cth99JzqIh5bQHNW0tvXS24ljmGaoOe5OTZJ1D/LXGCGXHFzuYXsMjZ3/f3c
+      MHaXh56+XlLJGGACClW+enp6e8kkFjY95SWXSWKvaqTnVBexaBiHu5revh5W4tEHj8xyFnp7
+      e8ktJ55gKs3D11chlWTkxg0y6SVmZ2eJJdMA2BQFA9CLxtr1qtTXXnvttU0/xieikEpGCYTC
+      qK5q9JUoGUMluRjF4/Fwb3KWo50t3Bi5w0oeDnW2rV168XFUTWFqcor40gotbS1M3RtHUxVS
+      eYNMxI/paWA54mchukh1XRN13s3tBTRVYWpymsTSCq2tTUyM3SEWT+Dx1pOJBFDr2shE5piZ
+      9dN+uIsqt31TuarKau5yita2Ru7dvk0skaTa10Aq4geXm4nJaRSjQN7UqPFUbO7/qqIQmZ9j
+      IbpITV0jyfAsc6EImrOCerfJVKzA+TO9NDX5wKikpblmc7k2G+HALJHYIt66JuLzs/jDEeyu
+      KmodRWbiRRorFcYmpnFUemlp2NwHn4rNRigwQzQWx1ffRCw4TSAcxeH2UK3mCCybaPklguEI
+      jgovzQ21m5xNoJBKRgiEFtDcHk6fPce+1hYAOlp8jN6b43BbHUOjY+haJR1tjSiKnAUSFidz
+      1YSlSQGEpUkBhKVJAYSlSQGEpUkBhKVJAYSlSQGEpUkBhKVJAYSlSQGEpf0/8e0yc+5Vz0YA
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
